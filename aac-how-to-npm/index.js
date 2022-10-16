@@ -14,3 +14,16 @@ console.log('hello');
 const {v4: uuid} = require('uuid');
 
 console.log(uuid())
+
+// updating versions
+// 9.5.1  major minor patch
+//     "uuid": "9.0.0"  - do not update anything, use static version
+//     "uuid": "^9.0.0"  - update minor version and patch
+//     "uuid": "~9.0.0"  - update only patch
+//     "uuid": "*"  - always use absolute latest version
+
+
+// how to uninstall dependency
+// npm rm nodemon -g // for global vesion
+// npm rm nodemon -D // for dev dependency
+// npm rm nodemon // dependency
