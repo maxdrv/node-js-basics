@@ -9,4 +9,8 @@ console.log(format(new Date(), 'yyyyMMdd\tHH:mm:ss'))  // usage of dependency ak
 // npm run dev
 
 
-console.log('hello')
+console.log('hello');
+
+const {v4: uuid} = require('uuid');
+
+console.log(uuid())
